@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "attestations": {
+      "$ref": "#/definitions/Entity"
+    }
+  },
+  "title": "Entity",
+  "required": [
+    "Entity"
+  ],
+  "definitions": {
+    "Entity": {
+      "$id": "#/properties/Entity",
+      "type": "object",
+      "title": "The Entity Schema",
+      "required": [
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$id": "#/properties/name",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Name for the entity"
+        },
+        "entity_id": {
+          "$id": "#/properties/entity_id",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "title": "entity_id"
+        },
+        "entityidStr": {
+          "$id": "#/properties/entityidStr",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "entityidStr"
+        },
+        "business_registration_number": {
+          "$id": "#/properties/business_registration_number",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "business_registration_number"
+        },
+        "tax_registration_number": {
+          "$id": "#/properties/tax_registration_number",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "tax_registration_number"
+        },
+        "registration_date": {
+          "$id": "#/properties/registration_date",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "tax_registration_date"
+        },
+        "address_line1": {
+          "$id": "#/properties/address_line1",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "address_line1"
+        },
+        "address_line2": {
+          "$id": "#/properties/address_line2",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "address_line2"
+        },
+        "city": {
+          "$id": "#/properties/city",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "city"
+        },
+        "state": {
+          "$id": "#/properties/state",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "state"
+        },
+        "country": {
+          "$id": "#/properties/country",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "country"
+        },
+        "pin_code": {
+          "$id": "#/properties/pin_code",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "title": "pin_code"
+        },
+        "deleted": {
+          "$id": "#/properties/deleted",
+          "type": "boolean",
+          "default": ""
+        },
+        "is_registered": {
+          "$id": "#/properties/is_registered",
+          "type": "boolean",
+          "default": ""
+        },
+
+        "created_at": {
+          "$id": "#/properties/created_at",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "updated_at": {
+          "$id": "#/properties/created_at",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_by": {
+          "$id": "#/properties/created_by",
+          "type": [
+            "string",
+            "null"
+          ]
+
+        },
+        "updated_by": {
+          "$id": "#/properties/updated_by",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

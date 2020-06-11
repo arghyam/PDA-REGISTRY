@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "attestations": {
+      "$ref": "#/definitions/EntityRole"
+    }
+  },
+  "title": "EntityRole",
+  "required": [
+    "EntityRole"
+  ],
+  "definitions": {
+    "EntityRole": {
+      "$id": "#/properties/EntityRole",
+      "type": "object",
+      "title": "The EntityRole Schema",
+      "required": [
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "entity_id": {
+          "$id": "#/properties/entity_id",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "title": "Name for the entity"
+        },
+        "entityidStr": {
+          "$id": "#/properties/entityidStr",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "title": "entityidStr"
+        },
+
+        "role": {
+          "$id": "#/properties/role",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "role"
+        },
+        "user_id": {
+          "$id": "#/properties/user_id",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "user_id"
+        },
+        "deleted": {
+          "$id": "#/properties/deleted",
+          "type": "boolean",
+          "default": ""
+        },
+        "created_at": {
+          "$id": "#/properties/created_at",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "updated_at": {
+          "$id": "#/properties/created_at",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_by": {
+          "$id": "#/properties/created_by",
+          "type": [
+            "string",
+            "null"
+          ]
+
+        },
+        "updated_by": {
+          "$id": "#/properties/updated_by",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "attestations": {
+      "$ref": "#/definitions/attestations"
+    }
+  },
+  "title": "attestations",
+  "required": [
+    "attestations"
+  ],
+  "definitions": {
+    "attestations": {
+      "$id": "#/properties/attestations",
+      "type": "object",
+      "title": "The attestations Schema",
+      "required": [
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "$id": "#/properties/role",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "role for the user"
+        },
+        "attestationUrl": {
+          "$id": "#/properties/attestationUrl",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Attestation Url"
+        },
+        "deleted": {
+          "$id": "#/properties/deleted",
+          "type": "boolean",
+          "default": ""
+        },
+        "scanInDateTime": {
+          "$id": "#/properties/scanInDateTime",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scanOutDateTime": {
+          "$id": "#/properties/scanOutDateTime",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "userId": {
+          "$id": "#/properties/userId",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "entityId": {
+          "$id": "#/properties/entityId",
+          "type": ["integer","null"],
+          "$comment": "Entity Id"
+        },
+        "entityName": {
+          "$id": "#/properties/entityName",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "programName": {
+          "$id": "#/properties/programName",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sessionName": {
+          "$id": "#/properties/sessionName",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scanInSessionLat": {
+          "$id": "#/properties/scanInSessionLat",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scanInSessionLon": {
+          "$id": "#/properties/scanInSessionLon",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scanOutSessionLat": {
+          "$id": "#/properties/scanOutSessionLat",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scanOutSessionLon": {
+          "$id": "#/properties/scanOutSessionLon",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "contentS3Url": {
+          "$id": "#/properties/contentS3Url",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "typeOfAttestation": {
+          "$id": "#/properties/typeOfAttestation",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "noOfParticipants": {
+          "$id": "#/properties/noOfParticipants",
+          "type": ["integer","null"],
+          "$comment": "Number Of Participants"
+        }
+      }
+    }
+  }
+}

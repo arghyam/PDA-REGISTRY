@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "attestations": {
+      "$ref": "#/definitions/EntityDocs"
+    }
+  },
+  "title": "EntityDocs",
+  "required": [
+    "EntityDocs"
+  ],
+  "definitions": {
+    "EntityDocs": {
+      "$id": "#/properties/EntityDocs",
+      "type": "object",
+      "title": "The EntityDocs Schema",
+      "required": [
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "entity_document_id": {
+          "$id": "#/properties/entity_document_id",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "title": "Name for the entity"
+        },
+        "entity_id": {
+          "$id": "#/properties/entity_id",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "title": "entity_id"
+        },
+        "entityidStr": {
+          "$id": "#/properties/entityidStr",
+           "type": [
+              "string",
+               "null"
+           ],
+            "title": "entityidStr"
+         },
+        "content_type": {
+          "$id": "#/properties/content_type",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "content_type"
+        },
+        "content_url": {
+          "$id": "#/properties/content_url",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "content_url"
+        },
+        "vimeo_url": {
+          "$id": "#/properties/vimeo_url",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "vimeo_url"
+        },
+        "name": {
+          "$id": "#/properties/name",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "name"
+        },
+        "deleted": {
+          "$id": "#/properties/deleted",
+          "type": "boolean",
+          "default": ""
+        },
+
+
+        "created_at": {
+          "$id": "#/properties/created_at",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "updated_at": {
+          "$id": "#/properties/created_at",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_by": {
+          "$id": "#/properties/created_by",
+          "type": [
+            "string",
+            "null"
+          ]
+
+        },
+        "updated_by": {
+          "$id": "#/properties/updated_by",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

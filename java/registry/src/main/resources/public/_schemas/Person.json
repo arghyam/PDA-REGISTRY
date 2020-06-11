@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "person": {
+      "$ref": "#/definitions/person"
+    }
+  },
+  "title": "person",
+  "required": [
+    "person"
+  ],
+  "definitions": {
+    "person": {
+      "$id": "#/properties/person",
+      "type": "object",
+      "title": "The person Schema",
+      "required": [
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$id": "#/properties/name",
+          "type": "string",
+          "title": "Full name"
+        },
+        "emailId": {
+          "$id": "#/properties/emailId",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Email Id Schema",
+          "examples": [
+            "joe@gmail.com"
+          ]
+        },
+        "phoneNumber": {
+          "$id": "#/properties/phoneNumber",
+          "type": "string",
+          "title": "The Phone Number  Schema",
+          "default": ""
+        },
+        "userId": {
+          "$id": "#/properties/userId",
+          "type": "string",
+          "title": "Unique User Id"
+        },
+        "salutation": {
+          "$id": "#/properties/salutation",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "countryCode": {
+          "$id": "#/properties/countryCode",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Country Code for Phone Number"
+        },
+        "photo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "contentEncoding": "base64",
+          "mediaType": "image/png"
+        },
+        "crtdDttm": {
+          "$id": "#/properties/crtdDttm",
+          "type": "string",
+          "title": "Created Date"
+        },
+        "updtDttm": {
+          "$id": "#/properties/updtDttm",
+          "type": "string",
+          "title": "Updated Date"
+        },
+        "profileCardUrl": {
+          "$id": "#/properties/profileCardUrl",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "active": {
+          "$id": "#/properties/active",
+          "type": "boolean",
+          "title": "Is User Active Or Inactive",
+          "default": true
+        }
+      }
+    }
+  }
+}

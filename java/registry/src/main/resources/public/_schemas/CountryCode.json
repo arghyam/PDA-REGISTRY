@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "CountryCode": {
+      "$ref": "#/definitions/CountryCode"
+    }
+  },
+  "title":"CountryCode",
+  "required": [
+    "CountryCode"
+  ],
+  "definitions": {
+    "CountryCode": {
+      "$id": "#/properties/CountryCode",
+      "type": "object",
+      "title": "The CountryCode Schema",
+      "required": [
+      ],
+      "additionalProperties": false,
+      "properties": {
+      	"code": {
+          "$id": "#/properties/code",
+          "type": "string",
+          "title": "Country Code",
+          "examples": [
+            "+91"
+          ]
+        },
+        "country": {
+          "$id": "#/properties/country",
+          "type": ["string"],
+          "title": "Country Name",
+          "examples": [
+            "INDIA"
+          ]
+        },
+        "phoneNumberLength": {
+          "$id": "#/properties/phoneNumberLength",
+          "type": ["integer","null"],
+          "$comment": "Phone Number Length"
+        }
+      }
+    }
+  }
+}
