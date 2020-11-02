@@ -19,7 +19,7 @@
       ],
       "additionalProperties": false,
       "properties": {
-      	"code": {
+       "code": {
           "$id": "#/properties/code",
           "type": "string",
           "title": "Country Code",
@@ -39,6 +39,16 @@
           "$id": "#/properties/phoneNumberLength",
           "type": ["integer","null"],
           "$comment": "Phone Number Length"
+        },
+        "phoneNumberSizeMin": {
+          "$id": "#/properties/phoneNumberSizeMin",
+          "type": ["integer","null"],
+          "$comment": "Phone Number Length min"
+        },
+        "phoneNumberSizeMax": {
+          "$id": "#/properties/phoneNumberSizeMax",
+          "type": ["integer","null"],
+          "$comment": "Phone Number Length max"
         }
       }
     }
