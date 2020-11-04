@@ -84,3 +84,4 @@ validations_update.shex
 nohup.out
 java/nohup.out
 java/registry/nohup.out
+java/registry/src/main/resources/application.yml
