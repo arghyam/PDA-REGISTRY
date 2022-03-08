@@ -67,9 +67,9 @@ public class AuthorizationFilter implements Middleware {
 					logger.debug("Access token verified successfully with KeyCloak server !");
 				}
 				AuthInfo authInfo = extractTokenIntoAuthInfo(token);
-				if (authInfo.getSub() == null || authInfo.getAud() == null || authInfo.getName() == null) {
+				/*if (authInfo.getSub() == null || authInfo.getAud() == null || authInfo.getName() == null) {
 					throw new MiddlewareHaltException(VERIFICATION_EXCEPTION);
-				}
+				}*/
 				List<SimpleGrantedAuthority> authorityList = new ArrayList<>();
 
 				authorityList.add(new SimpleGrantedAuthority(authInfo.getAud()));
