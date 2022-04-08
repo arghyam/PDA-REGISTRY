@@ -67,6 +67,9 @@ public class AuthorizationFilter implements Middleware {
 					logger.debug("Access token verified successfully with KeyCloak server !");
 				}
 				AuthInfo authInfo = extractTokenIntoAuthInfo(token);
+/* This is a temporary fix since the name attribute within authInfo is null. If this is configured to be returned as part of the auth token in keycloak, 
+				we can skip this change.*/
+				
 				/*if (authInfo.getSub() == null || authInfo.getAud() == null || authInfo.getName() == null) {
 					throw new MiddlewareHaltException(VERIFICATION_EXCEPTION);
 				}*/
